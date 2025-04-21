@@ -25,20 +25,7 @@ To run the app locally, make sure you have the following installed:
    git clone https://github.com/your-username/medical-cost-prediction.git
    cd medical-cost-prediction
 
-Project Structure
 
-medical-cost-prediction/
-│
-├── app.py                  # Main Streamlit app script
-├── models/                 # Folder containing the trained model and preprocessor
-│   ├── xgb_model.pkl       # Trained XGBoost model
-│   └── preprocessor.pkl    # Data preprocessor for transforming input data
-├── data/                   # Folder containing the dataset (optional if using custom uploads)
-│   └── medical.csv         # Default dataset for testing
-├── logs/                   # Folder for saving prediction logs
-│   └── custom_predictions_log.csv  # Logs of custom predictions made in the app
-├── requirements.txt        # Python dependencies
-└── README.md               # This file
 
 How to Use
 Upload a CSV or Use Default Data: In the sidebar, you can either upload a custom dataset (CSV) or use the default medical dataset (medical.csv) to visualize predictions.
