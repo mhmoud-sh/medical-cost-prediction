@@ -45,18 +45,22 @@ explainer = shap.Explainer(model)
 shap_values = explainer(X_df)
 
 # === SHAP Summary Plot (Bar) ===
-st.subheader("📊 SHAP Feature Importance")
-st.caption("Bar chart showing global feature contributions.")
-plt.figure(figsize=(10, 6))
-shap.plots.bar(shap_values, max_display=10)
-st.pyplot(plt.gcf())
+st.subheader("SHAP Summary Plot (Top 10 Features)")
+fig_bar, ax_bar = plt.subplots()
+shap.plots.bar(shap_values, max_display=10, show=False)
+st.pyplot(fig_bar)
 
 # === SHAP Beeswarm Plot ===
-st.subheader("🐝 SHAP Beeswarm Plot")
-st.caption("Visualizes distribution and effect of features across all samples.")
-plt.figure(figsize=(10, 6))
-shap.plots.beeswarm(shap_values, max_display=10)
-st.pyplot(plt.gcf())
+st.subheader("SHAP Beeswarm Plot")
+fig_bee, ax_bee = plt.subplots()
+shap.plots.beeswarm(shap_values, max_display=10, show=False)
+st.pyplot(fig_bee)
+
+# --- SHAP Waterfall Plot (for a single example)
+st.subheader("SHAP Waterfall Plot (First Prediction)")
+fig_water, ax_water = plt.subplots()
+shap.plots.waterfall(shap_values[0], max_display=10, show=False)
+st.pyplot(fig_water)
 
 # === Individual Prediction Explanation ===
 st.subheader("🔍 Individual Prediction Explanation")
