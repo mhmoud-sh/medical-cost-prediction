@@ -53,4 +53,6 @@ Made with 💙 by shikheldin
 8. **License**: Licensing information for others to use the code.
 
 
+## 🌐 Live Demo
+Check out the deployed app here: [Medical Cost Predictor](https://medical-cost-prediction65487654.streamlit.app/)
 
