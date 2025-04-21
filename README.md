@@ -1,3 +1,4 @@
+ HEAD
 # 💡 Medical Cost Prediction - SHAP Dashboard
 
 An interactive Streamlit dashboard for exploring SHAP-based feature importance and making custom predictions on medical insurance charges. Built as a portfolio project to demonstrate skills in Machine Learning, Explainable AI (XAI), and web app deployment.
@@ -56,3 +57,6 @@ cd medical-cost-prediction
 conda create -n medcost python=3.10
 conda activate medcost
 pip install -r requirements.txt
+
+# medical-cost-prediction
+11f9cd7ecf240e36b463b0e465b484356aa6214f
