@@ -1,0 +1,2 @@
+timestamp,age,sex,bmi,children,smoker,region,predicted_charges
+2025-04-21 14:32:35,30,male,25.0,0,yes,southwest,17573.238
